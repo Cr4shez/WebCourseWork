@@ -1,0 +1,237 @@
+body {
+	font-family: sans-serif;
+	padding 0;
+	margin: 0;
+	width: 100%;
+}
+
+header {
+	width:100%;
+}
+
+footer {
+	height: 500px;
+	width:100%;
+	background-color: #FEC434
+}
+
+.container {
+	width: 100%;
+}
+
+.bucket {
+	width: 55px;
+	height: 55px;
+	
+
+}
+/*Кружок рядом с корзиной с счетчиком*/
+.ordercount { 
+	
+	width: 35px;
+	height: 35px;
+	border: 3px solid #000;
+	float: right;
+	text-align: center;
+	border-radius: 100%;
+	background: #D92127;
+}
+
+.ordercount p span{
+	display: block;
+}
+
+.menu {
+	height: 85px;
+	background-color: #FCDD41;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-around;
+	height:auto;
+	/*background:url(../img/surprise.jpg) no-repeat center /cover;
+	background-color: rgba(173, 57, 22, 0.5);*/
+}
+
+.content2 {
+	height:auto;
+	background-color: #DC2127;
+}
+
+.content2 span {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 36px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.content3 {
+	height: auto;
+}
+
+.examplephoto {
+	width: 360px;
+	height: 300px;
+}
+
+.footerbg {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.descbox {
+	width: 150px;
+	height: 150px;
+}
+
+.description {
+	font-size: 25px;
+}
+.desctitle span {
+	text-align: center;
+}
+.description pre {
+	text-align: center;
+}
+
+.loginimage {
+	width: 45px;
+	height: 45px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.flex-element2 pre {
+
+color: purple;
+font-size: 20px;
+}
+
+.flex-element33 pre {
+font-size: 20px;
+color: purple;
+text-align: center;
+}
+
+.flex-element33 pre span {
+font-size: 30px;
+font-weight: 1000;
+}
+
+.content3 pre {
+font-family: Open Sans;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 40px;
+	margin-left:30px;
+}
+/*menu (содрал с сайта и прикрепил к нашему проекту)*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 30px 0 5px;
+  text-align: center;
+  align-items: center;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 30px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.pagedescription {
+	font-family: Open Sans;
+	margin-left: 26%;
+}
+
+.pagedescription {
+	width: auto;
+}
+
+.pagecontent {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 30px;
+	text-align: center;
+	color: black;
+}
+
+.pagecontent2 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 20px;
+	text-align: left;
+	color: black; 
+	margin-left: 28%;
+	margin-top: 30px;
+}
+
+.advantage {
+	width: 250px;
+	height: 250px;
+}
+
+.pagecontent3 h1 {
+ margin-left: 20%;
+}
+
+.pagecontent-male {
+}
+
+.pagecontent-female {
+
+}

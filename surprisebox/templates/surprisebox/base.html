@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<title>Коробка с сюрпризом</title>
+	<link rel="stylesheet" href="{% static 'surprisebox/css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'surprisebox/css/flexbox.css' %}">
+</head>
+<body>
+<header>
+		<div class="container flex-container1">
+			<p><a href="{% url 'index' %}">
+				<img src="{% static 'surprisebox/img/logo.PNG' %}" alt="Logo" class="logo flex-element1" /></a>
+			</p>
+
+			<div class="flex-element2">
+
+				<img src="{% static 'surprisebox/img/bucket.png' %}" alt="Bucket" class="bucket"/>
+				<div class="ordercount flex-element3">
+					<p><span>0</span></p>
+				</div>
+				<div class="regauto">
+
+				<p><a href="">	<img src="{% static 'surprisebox/img/login.png' %}" alt="" class="loginimage"></a></p>
+				</div>
+
+			</div>
+		</div>
+    	<section>
+		<div class="container menu">
+			<ul class="menu-main">
+ 				<li><a href="{% url 'index' %}">ГЛАВНАЯ</a></li>
+  				<li><a href="{% url 'whose_gift' %}">КОМУ ПОДАРОК</a></li>
+  				<li><a href="{% url 'delivery' %}">ДОСТАВКА И ОПЛАТА</a></li>
+  				<li><a href="{% url 'about' %}">О НАС</a></li>
+			</ul>
+		</div>
+	</section>
+	</header>
+{% block content %}
+{% endblock %}
+<footer>
+		<div class="container flex-container2">
+			<img src="{% static 'surprisebox/img/footer-bg.PNG' %}" alt="" class="footerbg">
+		</div>
+		<div class="container flex-container3">
+			<div class="flex-element31">
+				<img src={% static 'surprisebox/img/logotype.png' %} alt="">
+				<div class="flex-element311">
+					<p><a href=""><img src="{% static "surprisebox/img/phone.png" %}" width="30px;" height="30px" alt=""></a></p>
+					<p><a href="https://vk.com/feed"><img src="{% static 'surprisebox/img/vk.png' %}" width="30px" height="30px" alt=""></a></p>
+					<p><a href="https://www.instagram.com"><img src="{% static 'surprisebox/img/instagram.png' %}" width="30px" height="30px" alt=""></a></p>
+				</div>
+			</div>
+			<div class="flex-element32">
+			<img src="{% static "surprisebox/img/viberwhatsapp.png" %}" alt=""></div>
+			<div class="flex-element33"><pre>
+<span>+8(800)555-35-35</span>
+
+c 10 до 22:00 без выходных
+
+Доставка: Россия, СНГ, Европа
+
+mail: surprizebox-khv@mail.ru
+			</pre></div>
+		</div>
+	</footer>
+</body>
+</html>

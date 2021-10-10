@@ -1,0 +1,22 @@
+{% extends "surprisebox/base.html" %}
+{% load static %}
+{% block title %} Кому подарок? {% endblock %}
+{% block content %}
+	<section>
+		<div class="container pagedescription">
+			<h2>Кому подарок</h2>
+		</div>
+
+		<div class="container pagecontent">
+			<div class="male">
+				<a href="podarok-parnju.html"><img src="img/box_male.png" alt=""></a>
+				<br>Для парней
+			</div>
+
+			<div class="female">
+				<a href="podarok-devushke.html"><img src="img/box_female.png" alt=""></a>
+				<br>Для девушек
+			</div>
+		</div>
+	</section>
+{% endblock %}

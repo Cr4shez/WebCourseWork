@@ -14,9 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from surprisebox import views
 
+appname = 'box'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('surprisebox.urls'))
+    path('', views.index, name='index'),
+    path('delivery/', views.delivery, name='delivery'),
+    path('whose_gift/', views.whose_gift, name='whose_gift'),
+    path('whose_gift/male/', views.male_gift, name='male_gift'),
+    path('whose_gift/female/', views.female_gift, name='female_gift'),
+    path('about/', views.about, name='about'),
 ]

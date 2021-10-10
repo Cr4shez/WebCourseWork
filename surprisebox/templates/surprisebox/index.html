@@ -1,0 +1,54 @@
+{% extends 'surprisebox/base.html' %}
+{% load static %}
+{% block title %} Главная {% endblock %}
+{% block content %}
+	<section>
+		<div class="container content">
+			<img src="{% static 'surprisebox/img/surprise.png' %}" alt="surprise" class="surprise">
+			<div class="description">
+				<div class="desctitle">
+					<span>Что такое</span>
+					<img src="{% static 'surprisebox/img/descbox.png' %}" alt="" class="descbox">
+					<span>Коробка с сюрпризом?</span>	
+				</div>
+				<pre>
+МЫ - СЕРВИС ПО ДОСТАВКЕ ПОДАРКОВ-СЮРПРИЗОВ.
+ПОЛУЧАТЕЛЬ И ОТПРАВИТЕЛЬ НЕ ЗНАЮТ, ЧТО ВНУТРИ, ПОКА НЕ
+РАЗОРВУТ КРАФТОВУЮ БУМАГУ С КРАСНОЙ ЛЕНТОЙ.
+
+Мы отбираем качественные и добротные подарки.
+То, что получателю Сюрприза будет приятно получить
+и сохранить надолго. Мы не дарим эмоций
+и мимолетных впечатлений, нет. Мы дарим
+ощутимый и физический подарок. Но прибаляем к
+нему оболочку эмоций и неожиданности.</pre>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container content2">
+			<span class="invitation">УДИВИ ПОЛУЧАТЕЛЯ - МНОЖЕСТВО СЮРПРИЗОВ СРАЗУ В ОДНОЙ КОРОБКЕ</span>
+			<br>
+		</div>
+	</section>
+	<section>
+		<div class="container content3">
+			<pre>Мы гарантируем:
+- уникальный подход к каждой коробке
+- наличие крутых сладостей с разных стран мира</pre>
+			<div class="examples">
+			<img src="{% static "surprisebox/img/photo1.PNG" %}" alt="" class="examplephoto">
+			<img src="{% static "surprisebox/img/photo2.PNG" %}">
+			<img src="{% static "surprisebox/img/photo3.PNG" %}">
+			<img src="{% static "surprisebox/img/photo4.PNG" %}">
+			<img src="{% static "surprisebox/img/photo5.PNG" %}">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container reply">
+			<div class=""><a href=""><img src="{% static 'surprisebox/img/reply.PNG' %}" alt="" ></a></div>
+		</div>
+	</section>
+{% endblock content %}
+

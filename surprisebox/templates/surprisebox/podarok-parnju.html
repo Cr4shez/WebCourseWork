@@ -1,0 +1,33 @@
+{% extends "surprisebox/base.html" %}
+{% load static %}
+{% block title %} Подарок Парню {% endblock %}
+{% block content %}
+	<section>
+		<div class="container pagedescription">
+			<h2>Подарок парню</h2>
+		</div>
+
+		<div class="container pagecontent-presents">
+			<div class="present small">
+				<img src="img/box_male.png" alt="">
+				<h3>Подарок парню S (5-10 вещей в боксе)</h3>
+				<p>600 рублей</p>
+				<img src="img/purchase.PNG" alt="" class="purchase">
+			</div>
+
+			<div class="present medium">
+				<img src="img/box_male.png" alt="">
+				<h3>Подарок парню M (10-15 вещей в боксе)</h3>
+				<p>900 рублей</p>
+				<img src="img/purchase.PNG" alt="" class="purchase">
+			</div>
+
+			<div class="present large">
+				<img src="img/box_male.png" alt="">
+				<h3>Подарок парню L (15-20 вещей в боксе)</h3>
+				<p>1200 рублей</p>
+				<img src="img/purchase.PNG" alt="" class="purchase">
+			</div>
+		</div>
+	</section>
+{% endblock %}

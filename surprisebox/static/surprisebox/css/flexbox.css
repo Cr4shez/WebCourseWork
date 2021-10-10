@@ -1,0 +1,110 @@
+/*
+display (flex | inline-flex(обрезает блок по содержимому))
+flex-direction (row! | row-reverse | column | column-reverse)
+flex-wrap (nowrap! | wrap | wrap-reverse) (перенос на след. строку)
+justify-content (flex-start! | flex-end | center | space-between | space-around)
+*/
+
+.flex-element1 {
+	margin-right:auto;
+	margin-left: 30px;
+}
+
+.flex-element2 {
+	width: 500px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-element2 pre {
+}
+
+.flex-element3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flex-element311 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex-container1 {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.flex-container2 {
+	display: flex;
+}
+
+.flex-container3 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.examples {
+	display:flex;
+	justify-content: space-around;
+}
+
+.reply {
+	display: inline-flex;
+	height: auto;
+	justify-content: center;
+	margin-top: 50px;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content2 {
+	display: flex;
+	justify-content: center;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.desctitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.descbox {
+	align-self: center;
+}
+
+.pagecontent {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.advantages {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.pagecontent-presents {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.present .purchase {
+	margin-left: 25%
+}
