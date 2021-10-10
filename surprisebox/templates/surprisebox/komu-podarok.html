@@ -9,12 +9,12 @@
 
 		<div class="container pagecontent">
 			<div class="male">
-				<a href="podarok-parnju.html"><img src="img/box_male.png" alt=""></a>
+				<a href="{% url 'male_gift' %}"><img src="{% static 'surprisebox/img/box_male.png' %}" alt=""></a>
 				<br>Для парней
 			</div>
 
 			<div class="female">
-				<a href="podarok-devushke.html"><img src="img/box_female.png" alt=""></a>
+				<a href="{% url 'female_gift' %}"><img src="{% static 'surprisebox/img/box_female.png' %}" alt=""></a>
 				<br>Для девушек
 			</div>
 		</div>
